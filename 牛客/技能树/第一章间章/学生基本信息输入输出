@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    long id;
+    double s1, s2, s3;
+    // 直接在格式字符串里写上分号和逗号
+    if (scanf("%ld;%lf,%lf,%lf", &id, &s1, &s2, &s3) == 4) {
+        printf("The each subject score of No. %ld is %.2f, %.2f, %.2f.\n", id, s1, s2, s3);
+    }
+    return 0;
+}
