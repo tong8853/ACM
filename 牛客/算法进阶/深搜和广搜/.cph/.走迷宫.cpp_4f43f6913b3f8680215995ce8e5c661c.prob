@@ -1,0 +1,1 @@
+{"name":"Local: 走迷宫","url":"d:\\ACM\\牛客\\算法进阶\\深搜和广搜\\走迷宫.cpp","tests":[{"id":1773316133234,"input":"5 5\n1 1 5 5\n.....\n****.\n.....\n*****\n.....","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\ACM\\牛客\\算法进阶\\深搜和广搜\\走迷宫.cpp","group":"local","local":true}
