@@ -1,0 +1,1 @@
+{"name":"Local: 迷宫问题（找能到终点的路）","url":"d:\\ACM\\牛客\\算法进阶\\深搜和广搜\\迷宫问题（找能到终点的路）.cpp","tests":[{"id":1773332385379,"input":"5 5\n0 0 0 0 0\n0 1 1 1 0\n0 1 1 1 0\n0 1 1 1 0\n0 0 0 1 0\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\ACM\\牛客\\算法进阶\\深搜和广搜\\迷宫问题（找能到终点的路）.cpp","group":"local","local":true}
