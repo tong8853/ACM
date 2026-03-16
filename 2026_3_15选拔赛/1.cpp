@@ -1,3 +1,7 @@
+/*
+ * 天梯赛选拔赛
+ */
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -16,11 +20,12 @@ inline void read(T &a, int l, int r){
     for(int i = l; i <= r; i++) cin >> a[i];
 }
 
-const int N = 2e5+5;
-const ll p = 998244353;
+const int N = 2e5+5, M = 1e6+5;
+const ll INF = 1e15, p = 998244353;       // 注意判断 INF 具体的可能值
 
 inline void solve(){
-    
+    ll x, v;cin >> x >> v;
+    cout << x / v << endl;
 }
 
 int main() {

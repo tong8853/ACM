@@ -16,11 +16,23 @@ inline void read(T &a, int l, int r){
     for(int i = l; i <= r; i++) cin >> a[i];
 }
 
-const int N = 2e5+5;
-const ll p = 998244353;
+const int N = 2e5+5, M = 1e6+5;
+const ll INF = 1e15, p = 998244353;       // 注意判断 INF 具体的可能值
 
 inline void solve(){
-    
+    int n;cin >> n;
+    vi a(n);
+    rep(i, 0, n - 1) cin >> a[i];
+    int minx = *min_element(all(a));
+    int maxx = *max_element(all(a));
+    int min_cnt = 0;
+    int max_cnt = 0;
+    rep(i, 0, n - 1){
+        if(a[i] == minx) min_cnt++;
+        if(a[i] == maxx) max_cnt++;
+    }
+    cout << minx << " " << min_cnt << endl;
+    cout << maxx << " " << max_cnt << endl;
 }
 
 int main() {

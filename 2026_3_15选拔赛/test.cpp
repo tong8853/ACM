@@ -16,15 +16,16 @@ inline void read(T &a, int l, int r){
     for(int i = l; i <= r; i++) cin >> a[i];
 }
 
-const int N = 2e5+5;
-const ll p = 998244353;
+const int N = 1e5+5, M = 1e6+5;
+const ll INF = 1e15, p = 998244353;       // 注意判断 INF 具体的
 
 inline void solve(){
-    
+    int x;
+    scanf("%d", &x);
+    cout << x << endl;
 }
 
 int main() {
-    ios_base::sync_with_stdio(false);cin.tie(nullptr);
     int T = 1;//cin >> T;
     while(T--)solve();
 }
