@@ -16,19 +16,28 @@ inline void read(T &a, int l, int r){
     for(int i = l; i <= r; i++) cin >> a[i];
 }
 
+const int N = 2e5+5;
+const ll p = 998244353;
+
+
 inline void solve(){
     int n;cin >> n;
-    vi a(n);read(a, 0, n - 1);
-    vi ans;
-    for(auto &x : a){
-        auto pos = lower_bound(all(ans), x) - ans.begin();
-        if(pos == ans.size()) ans.push_back(x);
-        else ans[pos] = x;
+    vi a(n);
+    rep(i, 0, n - 1) cin >> a[i];
+    vi s;
+    rep(i, 0, n - 1){
+        if(s.empty()) s.push_back(a[i]);
+        else{
+            if(a[i] >= s.back()){
+                s.push_back(a[i]);
+            }
+        }
     }
-    cout << ans.size() << endl;
+    cout << s.size() << endl;
 }
 
 int main() {
-    int T = 1;//cin >> T;
+    ios_base::sync_with_stdio(false);cin.tie(nullptr);
+    int T = 1;cin >> T;
     while(T--)solve();
 }

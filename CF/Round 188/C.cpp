@@ -19,17 +19,28 @@ inline void read(T &a, int l, int r){
 const int N = 2e5+5;
 const ll p = 998244353;
 
+
+
+
 inline void solve(){
-     int n;cin >> n;
-     string s;cin >> s;
-     int pos = 0;
-     rep(i, 0, n - 1){
-        if(s[i] == 'L'){
-            pos = i + 1;
-            break;
-        }
-     }
-     cout << pos << endl;
+    ll a, b, c, m;
+    cin >> a >> b >> c >> m;
+    auto getlcm = [&](ll x, ll y){
+        ll res = (x / __gcd(x, y)) * y;
+        if(res > m) return m + 1;
+        return res;
+    };
+    ll ab = getlcm(a, b);
+    ll ac = getlcm(a, c);
+    ll bc = getlcm(b, c);
+    ll abc = getlcm(a, bc);
+    ll na = m / a, nb = m / b, nc = m / c;
+    ll nab = m / ab, nac = m / ac, nbc = m / bc;
+    ll nabc = m / abc;
+    ll ansA = 6 * na - 3 * nab - 3 * nac + 1 * nabc;
+    ll ansB = 6 * nb - 3 * nab - 3 * nbc + 1 * nabc;
+    ll ansC = 6 * nc - 3 * nac - 3 * nbc + 1 * nabc;
+    cout << ansA  << " " << ansB << " " << ansC << endl;
 }
 
 int main() {

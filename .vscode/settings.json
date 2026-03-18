@@ -1,92 +1,29 @@
 {
+    // 只有当文件名不带后缀，且确实不是 C++ 头文件时才需要手动关联
     "files.associations": {
-        "*.py": "python",
-        "iostream": "cpp",
         "*.tcc": "cpp",
-        "string": "cpp",
-        "unordered_map": "cpp",
-        "vector": "cpp",
-        "ostream": "cpp",
-        "new": "cpp",
-        "typeinfo": "cpp",
-        "deque": "cpp",
-        "initializer_list": "cpp",
-        "iosfwd": "cpp",
-        "fstream": "cpp",
-        "sstream": "cpp",
-        "map": "c",
-        "stdio.h": "c",
-        "algorithm": "cpp",
-        "atomic": "cpp",
-        "bit": "cpp",
-        "cctype": "cpp",
-        "clocale": "cpp",
-        "cmath": "cpp",
-        "compare": "cpp",
-        "concepts": "cpp",
-        "cstddef": "cpp",
-        "cstdint": "cpp",
-        "cstdio": "cpp",
-        "cstdlib": "cpp",
-        "cstring": "cpp",
-        "ctime": "cpp",
-        "cwchar": "cpp",
-        "exception": "cpp",
-        "ios": "cpp",
-        "istream": "cpp",
-        "iterator": "cpp",
-        "limits": "cpp",
-        "memory": "cpp",
-        "random": "cpp",
-        "set": "cpp",
-        "stack": "cpp",
-        "stdexcept": "cpp",
-        "streambuf": "cpp",
-        "system_error": "cpp",
-        "tuple": "cpp",
-        "type_traits": "cpp",
-        "utility": "cpp",
-        "xfacet": "cpp",
-        "xiosbase": "cpp",
-        "xlocale": "cpp",
-        "xlocinfo": "cpp",
-        "xlocnum": "cpp",
-        "xmemory": "cpp",
-        "xstddef": "cpp",
-        "xstring": "cpp",
-        "xtr1common": "cpp",
-        "xtree": "cpp",
-        "xutility": "cpp",
-        "stdlib.h": "c",
-        "string.h": "c",
-        "array": "cpp",
-        "chrono": "cpp",
-        "forward_list": "cpp",
-        "list": "cpp",
-        "unordered_set": "cpp",
-        "string_view": "cpp",
-        "format": "cpp",
-        "ranges": "cpp",
-        "span": "cpp",
-        "stacktrace": "cpp",
-        "regex": "cpp",
-        "valarray": "cpp"
+        "*.h": "cpp"  // 强制把 .h 当作 C++，对竞赛非常有用
     },
-    "editor.suggest.snippetsPreventQuickSuggestions": false,
-    "aiXcoder.showTrayIcon": true,
-    "editor.formatOnSave": false,
+    
+    // 竞赛核心：关闭恼人的红线（波浪线）
+    "C_Cpp.intelliSenseEngine": "disabled", 
+    
+    // 禁用 C++ 插件的自动格式化（如果你习惯手打缩进或手动排版）
     "C_Cpp.formatting": "disabled",
-    "python-envs.defaultEnvManager": "ms-python.python:conda",
-    "python-envs.defaultPackageManager": "ms-python.python:conda",
-    "python-envs.pythonProjects": [],
+    
+    // 彻底禁用 GitHub Copilot 的所有自动提示
     "github.copilot.enable": {
         "*": false,
-        "yaml": false,
         "plaintext": false,
         "markdown": false,
-        "scm": false
+        "scminput": false
     },
-    "github.copilot.advanced": {
-        "useOpenAI": false
-    }
+
+    // 提升写代码手感
+    "editor.suggest.snippetsPreventQuickSuggestions": true,
+    "editor.formatOnSave": false,
+
+    "editor.inlineSuggest.enabled": false,
+    
+    "python-envs.defaultEnvManager": "ms-python.python:conda"
 }

@@ -23,11 +23,11 @@ int peng[105];
 int di[105][105];
 
 int n, m;
-char g[N][N];
 PII dxy[] = {{-1, 0}, {1, 0}, {0, -1}, {0, 1}};
 
 inline void solve(){
     cin >> n >> m;
+    vector<vector<char>> g(n + 5, vector<char>(m + 5));
     rep(i, 1, n) rep(j, 1, m) cin >> g[i][j];
 
     int cnt1 = 0;//岛数
@@ -45,10 +45,10 @@ inline void solve(){
                 int y = point.ss;
                 g[x][y] = '0';
                 q.pop();
-                rep(i, 0, 3){
-                    int nx = x + dxy[i].ff;
-                    int ny = y + dxy[i].ss;
-                    if(g[nx][ny] - '0' > 0 && nx >= 1 && nx <= n && ny >= 1 && ny <= m){
+                rep(k, 0, 3){
+                    int nx = x + dxy[k].ff;
+                    int ny = y + dxy[k].ss;
+                    if(nx >= 1 && nx <= n && ny >= 1 && ny <= m && g[nx][ny] - '0' > 0){
                         q.push({nx, ny});
                         if(g[nx][ny] - '0' > 1) ok = true;
                         g[nx][ny] = '0';

@@ -1,4 +1,6 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
+#include <numeric>
 using namespace std;
 
 #define endl '\n'
@@ -16,19 +18,20 @@ inline void read(T &a, int l, int r){
     for(int i = l; i <= r; i++) cin >> a[i];
 }
 
+const int N = 2e5+5;
+const ll p = 998244353;
+
+
 inline void solve(){
-    int n;cin >> n;
-    vi a(n);read(a, 0, n - 1);
-    vi ans;
-    for(auto &x : a){
-        auto pos = lower_bound(all(ans), x) - ans.begin();
-        if(pos == ans.size()) ans.push_back(x);
-        else ans[pos] = x;
-    }
-    cout << ans.size() << endl;
+    ll a, b, c, m;
+    cin >> a >> b >> c >> m;
+    ll ab = lcm(a, b), ac = lcm(a, c), bc = lcm(b, c), abc = lcm(a, lcm(b, c));
+    ll ans = m / a + m / b + m / c - m / ab - m / ac - m / bc + m / abc;
+    cout << ans << endl;
 }
 
 int main() {
-    int T = 1;//cin >> T;
+    ios_base::sync_with_stdio(false);cin.tie(nullptr);
+    int T = 1;cin >> T;
     while(T--)solve();
 }
