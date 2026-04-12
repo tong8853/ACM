@@ -8,7 +8,7 @@ using namespace std;
 
 // 1. Dijkstra 算法（单源最短路径，非负权）
 // 时间复杂度：O((V+E)logV) - 优先队列实现
-vector<int> dijkstra(int n, vector<vector<pair<int,int>>>& graph, int src) {
+vector<int> dijkstra(int n, vector<vector<pair<int,int>>>& graph, int src){
     vector<int> dist(n, INT_MAX);
     dist[src] = 0;
     

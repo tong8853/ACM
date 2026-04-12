@@ -1,0 +1,1 @@
+{"name":"Local: P2840纸币问题2","url":"d:\\ACM\\动态规划\\背包问题\\完全背包\\P2840纸币问题2.cpp","tests":[{"id":1774087407262,"input":"6 15\n1 5 10 20 50 100","output":"42"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\ACM\\动态规划\\背包问题\\完全背包\\P2840纸币问题2.cpp","group":"local","local":true}

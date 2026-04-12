@@ -1,0 +1,36 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+#define endl '\n'
+#define rep(i, a, b) for (int i = (a); i <= (b); ++i)
+#define per(i, a, b) for (int i = (a); i >= (b); --i)
+#define all(x) (x).begin(), (x).end()
+#define PII pair<int, int>
+#define ff first
+#define ss second
+typedef long long ll;
+typedef vector<int> vi;
+typedef vector<ll> vll;
+template<typename T>
+inline void read(T &a, int l, int r){
+    for(int i = l; i <= r; i++) cin >> a[i];
+}
+
+const int N = 2e5+5;
+const ll p = 998244353;
+
+inline void solve(){
+    int n;cin >> n;
+    double sum = 0;
+    rep(i, 1, n){
+        if(i % 2) sum += (double)1 / (3 * i - 2);
+        else sum -= (double)1 / (3 * i - 2);
+    }
+    cout << "sum = " << fixed << setprecision(3) << sum;
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);cin.tie(nullptr);
+    int T = 1;//cin >> T;
+    while(T--)solve();
+}

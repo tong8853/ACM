@@ -6,7 +6,7 @@
     },
     
     // 竞赛核心：关闭恼人的红线（波浪线）
-    "C_Cpp.intelliSenseEngine": "disabled", 
+    //"C_Cpp.intelliSenseEngine": "disabled", 
     
     // 禁用 C++ 插件的自动格式化（如果你习惯手打缩进或手动排版）
     "C_Cpp.formatting": "disabled",
@@ -25,5 +25,6 @@
 
     "editor.inlineSuggest.enabled": false,
     
-    "python-envs.defaultEnvManager": "ms-python.python:conda"
+    "python-envs.defaultEnvManager": "ms-python.python:conda",
+    "C_Cpp.default.compilerPath": "D:/Program Files (x86)/mingw64/bin/g++.exe"
 }

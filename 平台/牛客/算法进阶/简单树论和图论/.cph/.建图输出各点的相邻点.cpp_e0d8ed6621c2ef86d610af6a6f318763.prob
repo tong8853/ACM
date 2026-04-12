@@ -1,0 +1,1 @@
+{"name":"Local: 建图输出各点的相邻点","url":"d:\\ACM\\牛客\\算法进阶\\简单树论和图论\\建图输出各点的相邻点.cpp","tests":[{"id":1773827082734,"input":"3 3\n1 2\n2 3\n3 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\ACM\\牛客\\算法进阶\\简单树论和图论\\建图输出各点的相邻点.cpp","group":"local","local":true}

@@ -12,7 +12,7 @@ using vi = vector<int>;
 using vll = vector<ll>;
 
 void solve(){
-    cout << gcd(4, 8) << endl;
+    
 }
 
 int main(){

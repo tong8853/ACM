@@ -1,20 +1,22 @@
 {
     "configurations": [
         {
-            "name": "Win64",
+            "name": "GPLT-Contest",
             "includePath": [
                 "${workspaceFolder}/**"
             ],
-            "defines": [
-                "_DEBUG",
-                "UNICODE",
-                "_UNICODE"
-            ],
-            "windowsSdkVersion": "10.0.18362.0",
-            "compilerPath": "D:/mingw/MinGW/bin/g++.exe",
-            "cStandard": "c17",
+            "defines": [],
+            "compilerPath": "D:/Program Files (x86)/mingw64/bin/g++.exe",
+            "cStandard": "c11",
             "cppStandard": "c++17",
-            "intelliSenseMode": "gcc-x64"
+            "intelliSenseMode": "windows-gcc-x64",
+            "browse": {
+                "path": [
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            }
         }
     ],
     "version": 4

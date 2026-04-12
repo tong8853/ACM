@@ -1,1 +1,0 @@
-{"name":"Local: 13","url":"d:\\ACM\\2026_3_15选拔赛\\13.cpp","tests":[{"id":1773752251463,"input":"10 11\n01000000151\n11000000111\n00110000811\n00110100010\n00000000000\n00000111000\n00114111000\n00110010000\n00019000010\n00120000001","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\ACM\\2026_3_15选拔赛\\13.cpp","group":"local","local":true}

@@ -1,0 +1,1 @@
+{"name":"Local: D","url":"d:\\ACM\\平台\\牛客\\网络赛\\周赛\\Round 137\\D.cpp","tests":[{"id":1774784783112,"input":"3\n3\n1 2 3\n4\n0 1 2 2\n6\n1 1 0 5 4 3","output":"0\n1\n2"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\ACM\\平台\\牛客\\网络赛\\周赛\\Round 137\\D.cpp","group":"local","local":true}
