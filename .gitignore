@@ -1,0 +1,15 @@
+# 过滤 CPH 的题目配置文件
+*.prob
+.cph/
+
+# 过滤编译生成的二进制文件
+*.exe
+*.o
+*.out
+
+# 过滤 Python 缓存
+__pycache__/
+*.pyc
+
+# 过滤 VS Code 自身的配置目录（可选）
+.vscode/
