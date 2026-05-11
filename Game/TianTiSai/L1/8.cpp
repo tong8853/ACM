@@ -3,24 +3,22 @@ using namespace std;
 
 #define endl '\n'
 #define rep(i, a, b) for (int (i) = (a); (i) <= (b); ++i)
-#define per(i, a, b) for (int (i) = (a); (i) >= (b); --i)
+#define rep2(i, a, b) for (int (i) = (a); (i) >= (b); --i)
 using PII = pair<int, int>;
 using ll = long long;
 using vi = vector<int>;
 using vll = vector<ll>;
 
 void solve(){
-    vector<string> s = {
-    "ling", "yi", "er", "san", "si", 
-    "wu", "liu", "qi", "ba", "jiu"
-    };
-    string in;
-    cin >> in;
-    rep(i, 0, (int)in.size() - 1){
-        if(i) cout << " ";
-        if(in[i] == '-') cout << "fu";
-        else cout << s[in[i] - '0'];
+    int a, b, sum = 0, cnt = 0;
+    cin >> a >> b;
+    rep(i, a, b){
+        cout << setw(5) << i;
+        cnt++;
+        sum += i;
+        if(cnt % 5 == 0 || i == b) cout << endl;
     }
+    cout << "Sum = " << sum;
 }
 
 int main(){
