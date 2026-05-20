@@ -15,14 +15,14 @@ void solve(){
     ll p, x, k;
     cin >> p >> x >> k;
     map<ll, int> cnt;
-    auto get = [&](ll n, ll c){
+    auto get = [&](ll n, ll c){ //获得某个数的最简质因数分解
         for(ll x = 2; x * x <= n; x++){
             while(n % x == 0){
                 cnt[x] += c;
                 n /= x;
             }
         }
-        if(n > 1) cnt[n] += c;
+        if(n > 1) cnt[n] += c;     // 一个数的最简质因数序列中最多可能会存在一个大于sqrt(n)的数字
     };
 
     get(p, 1);
