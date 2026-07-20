@@ -9,7 +9,16 @@ using ll = long long;
 using vi = vector<int>;
 using vll = vector<ll>;
 
+
+
 void solve(){
+    ll a, n;
+    cin >> a >> n;
+    vi d(n);
+    cin >> d;
+    string s = to_string(a);
+    int l = size(s);
+    char minx = s[0], maxx = s[n - 1];
     
 }
 
@@ -17,7 +26,7 @@ int main(){
     ios::sync_with_stdio(0);
     cin.tie(0);
     int T = 1;
-    //cin >> T;
+    cin >> T;
     while(T--) solve();
     return 0;
 }

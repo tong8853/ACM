@@ -10,7 +10,22 @@ using vi = vector<int>;
 using vll = vector<ll>;
 
 void solve(){
-    
+    int n;
+    cin >> n;
+    vi a(n + 1);
+    rep(i, 1, n){
+        cin >> a[i];
+    }
+
+    vi dp(n + 1, 1); //定义dp为以第i个元素结尾的最长不下降子序列的长度
+    rep(i, 1, n){
+        rep(j, 1, i - 1){
+            if(a[j] <= a[i]){
+                dp[i] = max(dp[i], dp[j] + 1);
+            }
+        }
+    }
+    cout << *max_element(dp.begin(), dp.end()) << endl;
 }
 
 int main(){

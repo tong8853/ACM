@@ -9,15 +9,29 @@ using ll = long long;
 using vi = vector<int>;
 using vll = vector<ll>;
 
+struct node{
+    ll w, v, s;
+};
+
 void solve(){
+    int n, m;
+    cin >> n >> m;
+    vi a(n + 1);
+    rep(i, 1, n){
+        cin >> a[i].w >> a[i].v >> a[i].s;
+    }
+
     
+
+
+
 }
 
 int main(){
     ios::sync_with_stdio(0);
     cin.tie(0);
     int T = 1;
-    //cin >> T;
+    cin >> T;
     while(T--) solve();
     return 0;
 }

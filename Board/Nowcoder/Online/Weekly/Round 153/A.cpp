@@ -10,7 +10,14 @@ using vi = vector<int>;
 using vll = vector<ll>;
 
 void solve(){
-    
+    string s;
+    cin >> s;
+    s = " " + s;
+    rep(i, 1, 2){
+        cout << s[i];
+        if((s[i] >= 'a' && s[i] <= 'z' || s[i] >= 'A' && s[i] <= 'Z') && (s[i + 1] >= 'a' && s[i + 1] <= 'z' || s[i + 1] >= 'A' && s[i + 1] <= 'Z')) cout << '.';
+    }
+    cout << s[3];
 }
 
 int main(){

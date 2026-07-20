@@ -10,7 +10,15 @@ using vi = vector<int>;
 using vll = vector<ll>;
 
 void solve(){
-    
+    int n;
+    cin >> n;
+    vi dp(n + 1);
+    dp[0] = dp[1] = 1;
+    ll mod = 998244353;
+    rep(i, 2, n){
+        dp[i] = (dp[i - 1] + dp[i - 2]) % mod;
+    }
+    cout << dp[n] << endl;
 }
 
 int main(){

@@ -10,7 +10,23 @@ using vi = vector<int>;
 using vll = vector<ll>;
 
 void solve(){
-    
+    int n, k;
+    cin >> n >> k;
+    vi a(n + 1);
+    rep(i, 1, n) cin >> a[i];
+    int sum = 0;
+    rep(i, 1, n) sum ^= a[i];
+    if(sum){
+        cout << "YES" << endl;
+        return;
+    }
+
+    if(*max_element(a.begin(), a.end()) < k){
+        cout << "NO" << endl;
+        return;
+    }
+
+    cout << (k ? "YES" : "NO") << endl;
 }
 
 int main(){

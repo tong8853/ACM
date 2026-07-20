@@ -10,7 +10,21 @@ using vi = vector<int>;
 using vll = vector<ll>;
 
 void solve(){
-    
+    ll dp[60][3];
+    memset(dp, 0, sizeof(dp));
+    string s;
+    cin >> s;
+    int m = s.size();
+    s = " " + s;
+    dp[0][0] = 1;
+    const ll mod = 1e9 + 7;
+    rep(i, 1, m){
+        ll c = (s[i] - '0') % 3;
+        rep(j, 0, 2){
+            dp[i][j] = (dp[i - 1][(j - c + 3) % 3] % mod + dp[i - 1][j] % mod) % mod;
+        }
+    }
+    cout << (dp[m][0] - 1 + mod) % mod << endl;
 }
 
 int main(){

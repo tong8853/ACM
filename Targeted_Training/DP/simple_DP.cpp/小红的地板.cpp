@@ -10,7 +10,17 @@ using vi = vector<int>;
 using vll = vector<ll>;
 
 void solve(){
-    
+    int n;
+    cin >> n;
+    vll a(n + 1);
+    rep(i, 1, n) cin >> a[i];
+    vi dp(n + 1);
+    dp[1] = 0;
+    rep(i, 2, n){
+        if(i > 2) dp[i] = min(dp[i - 2], dp[i - 1]) + a[i];
+        else dp[i] = dp[i - 1] + a[i];
+    }
+    cout << dp[n] << endl;
 }
 
 int main(){

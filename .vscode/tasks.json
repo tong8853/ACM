@@ -4,7 +4,7 @@
         {
             "type": "cppbuild",
             "label": "g++", // 与launch.json的preLaunchTask保持一致
-            "command": "D:/mingw/MinGW/bin/g++.exe", // 用完整路径确保g++可被找到
+            "command": "D:/Driver/msys2/ucrt64/bin/g++.exe", // 用完整路径确保g++可被找到
             "args": [
                 "-fdiagnostics-color=always",
                 "-g", // 生成调试信息（必须，否则调试器无法断点）

@@ -10,7 +10,15 @@ using vi = vector<int>;
 using vll = vector<ll>;
 
 void solve(){
-    
+    int n, k;
+    cin >> n >> k;
+    int x = 1;
+    rep(i, 1, n - 1){
+        cout << k << " ";
+        if(x == k) x++;
+        cout << x << endl;
+        x++;
+    }
 }
 
 int main(){
