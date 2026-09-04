@@ -1,0 +1,28 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+#define endl '\n'
+#define rep(i, a, b) for (int (i) = (a); (i) <= (b); ++i)
+#define rep2(i, a, b) for (int (i) = (a); (i) >= (b); --i)
+using PII = pair<int, int>;
+using ll = long long;
+using vi = vector<int>;
+using vll = vector<ll>;
+
+void solve(){
+    int a, b, ans = 0, mx = 8;
+    rep(i, 1, 7){
+        cin >> a >> b;
+        if(a + b > mx) ans = i, mx = a + b;
+    }
+    cout << ans;
+}
+
+int main(){
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    int T = 1;
+    //cin >> T;
+    while(T--) solve();
+    return 0;
+}
